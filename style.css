@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 1.3rem;
+
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+a, a:hover, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+button, button:hover, button:visited {
+    border: 0px;
+    background-color: transparent;
+}
+
+input, input:hover, input:visited {
+    border: 0px;
+    background-color: transparent;
+}
+
+/* ------> navbar <------ */
+
+.navbar {
+    height: 60px;
+    color: rgb(34, 34, 34);
+    padding: 6px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a{     
+    display: block;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 8px 0px 8px 15px;
+    text-decoration: none;
+    cursor: pointer;      
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .padding-right-15::after {
+    content: "__";
+    opacity: 0;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 15px;
+}
+
+.navbar .sign-in {
+    background-color: rgb(26, 115, 232);
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0px 12px;
+    line-height: 36px;
+    margin: 0px 0px 0px 15px;
+    color: white;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    min-width: 96px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.navbar .sign-in:hover {
+    text-decoration: none;
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+.google-apps {
+    background-image: url(https://web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position-x: -132px;
+    background-position-y: -38px;
+    background-size: 528px 68px;
+    opacity: 0.55;
+    border-radius: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.google-apps:hover {
+    opacity: 0.85;
+}
+
+/* ------> Google Search <------ */
+
+
+main {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #google-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    max-width: 584px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+main form {
+    width: 100%;
+}
+
+main .search-bar {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: auto;
+    max-width: 584px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    font-size: 1.6rem;
+    justify-content: space-between;
+}
+
+main .search-bar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+main .search-bar svg {
+    height: 30px;
+    max-width: 100%;
+}
+
+main .zoom-icon {
+    padding: 0 10px 0 20px;
+    opacity: 0.4;
+    height: 20px;
+}
+
+main .mic-icon {
+    padding: 0 20px 0 10px;
+}
+
+main .search-input {
+    width: 100%;
+    max-width: 584px;
+}
+
+main .search-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+main .search-buttons-individual {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 1.4rem;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .search-buttons-individual:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* ------> Footer <------ */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background:rgb(242, 242, 242);  
+}
+
+footer .location {
+    border-bottom: 1px solid #dadce0;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.54);
+    padding: 15px 30px;
+}
+
+footer .navbar-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+footer .navbar-info-left {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+footer .navbar-info-right {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+footer .footer-button {
+    color: rgba(0,0,0,0.54);
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: rgba(0,0,0,0.54);
+}
+
+footer a:hover {
+    color: rgba(0,0,0,0.54);
+    text-decoration: underline;
+}
+
